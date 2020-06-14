@@ -12,11 +12,11 @@ Example with current path :
 docker run --rm -it --mount type=bind,source="$(pwd)",target=/root hiveodbc:v1
 ```
 
-You can use the sql client provided with unixodbc
+From the container
 
 `isql WebDB MyID MyPWD -w < My.sql`
 
-how to pass secret (login/password) => use env file : https://docs.docker.com/compose/environment-variables/#the-env-file
+For parameters try Docker [env file](https://docs.docker.com/compose/environment-variables/#the-env-file)
 
 ## HDP
 
