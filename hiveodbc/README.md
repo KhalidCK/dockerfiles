@@ -9,7 +9,7 @@ Set-up your `.odbc.ini` and mount it in root home folder(`/root`)
 Example with current path :
 
 ```bash
-docker run --rm -it --mount type=bind,source="$(pwd)",target=/root hiveodbc:v1
+docker run --rm -it --mount type=bind,source="$(pwd)",target=/root hiveodbc
 ```
 
 From the container
@@ -24,10 +24,10 @@ The Hortonworks Hive ODBC Driver files are installed in the following directorie
 
 The Hortonworks Hive ODBC Driver files are installed in the following directories:
 
-- /usr/lib/hive/lib/native/hiveodbc/ErrorMessages – Error messages files directory
-- /usr/lib/hive/lib/native/hiveodbc/Setup – Sample configuration files directory
-- /usr/lib/hive/lib/native/Linux-i386-32 – 32-bit shared libraries directory
-- /usr/lib/hive/lib/native/Linux-amd64-64 – 64-bit shared libraries directory
+- `/usr/lib/hive/lib/native/hiveodbc/ErrorMessages` Error messages files directory
+- `/usr/lib/hive/lib/native/hiveodbc/Setup` Sample configuration files directory
+- `/usr/lib/hive/lib/native/Linux-i386-32` 32-bit shared libraries directory
+- `/usr/lib/hive/lib/native/Linux-amd64-64` 64-bit shared libraries directory
 
 The configuration files are:
 
@@ -37,13 +37,11 @@ The configuration files are:
 
 ## HDP Requirements
 
-- Red Hat® Enterprise Linux® (RHEL) 5.0, CentOS 5.0 or SUSE Linux Enterprise Server (SLES)
+- Red Hat Enterprise Linux (RHEL) 5.0, CentOS 5.0 or SUSE Linux Enterprise Server (SLES)
 - Both 32 and 64-bit editions are supported.
 - An installed ODBC Driver Manager, for example (iODBC 3.52.7 or above or unixODBC 2.3.0 or above)
 
 ## Notes
-
-Official open source project hive does not support ODBC
 
 > There is no ODBC driver available for HiveServer2 as part of Apache Hive. There are third party ODBC drivers available from different vendors, and most of them seem to be free.
 
