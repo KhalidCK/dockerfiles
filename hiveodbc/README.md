@@ -52,3 +52,4 @@ The configuration files are:
 - [unixodbc](http://www.unixodbc.org/odbcinst.html)
 - [HDP ODBC/JDBC](https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.5/bk_data-access/content/hive-jdbc-odbc-drivers.html)
 - [Horton system requirements](https://hortonworks.com/wp-content/uploads/2013/04/Hortonworks-Hive-ODBC-Driver-User-Guide.pdf)
+- [Cloudera community article](https://community.cloudera.com/t5/Community-Articles/How-to-Connect-To-Hive-via-Knox-Using-ODBC/ta-p/247714)
