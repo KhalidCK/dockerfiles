@@ -1,0 +1,16 @@
+jupytext
+altair
+vega_datasets
+openpyxl 
+html5lib
+lxml
+beautifulsoup4
+pyarrow
+boto3
+psycopg2-binary
+fuzzywuzzy[speedup]
+jellyfish
+spacy
+ecrivain
+khanbox
+kharser
