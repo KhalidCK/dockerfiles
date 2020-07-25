@@ -2,7 +2,7 @@ FROM jupyter/scipy-notebook
 
 USER $NB_UID
 WORKDIR /opt/app/data
-COPY jupyterlab/requirements.txt .
+COPY requirements.txt .
 RUN pip install --upgrade --force-reinstall --no-deps --no-cache-dir -r requirements.txt
 RUN conda install -c conda-forge altair_saver
 RUN jupyter labextension install @jupyterlab/toc
