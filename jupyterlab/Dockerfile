@@ -4,7 +4,7 @@ USER $NB_UID
 WORKDIR /opt/app/data
 COPY requirements.txt .
 RUN pip install --upgrade --force-reinstall --no-deps --no-cache-dir -r requirements.txt
-RUN conda install -c conda-forge altair_saver
+RUN npm install -g vega-lite vega-cli canvas
 RUN jupyter labextension install @jupyterlab/toc
 EXPOSE 8888
 
