@@ -15,4 +15,4 @@ spacy
 ecrivain
 khanbox
 kharser
-khadoop == 1.2.0
+khadoop
