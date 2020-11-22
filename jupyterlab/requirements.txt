@@ -16,3 +16,5 @@ ecrivain
 khanbox
 kharser
 khadoop
+nbdime
+requests-html
