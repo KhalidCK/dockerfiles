@@ -18,3 +18,4 @@ kharser
 khadoop
 nbdime
 requests-html
+jupyterlab-git
