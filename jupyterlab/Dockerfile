@@ -5,9 +5,4 @@ VOLUME /opt/app/data
 WORKDIR /opt/app/data
 COPY requirements.txt .
 RUN pip install --upgrade --no-cache-dir -r requirements.txt
-RUN npm install -g vega-lite vega-cli canvas
 RUN jupyter labextension install @jupyterlab/toc
-
-EXPOSE 8888
-
-CMD jupyter lab --ip=* --port=8888 --no-browser --notebook-dir=/opt/app/data --allow-root
