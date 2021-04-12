@@ -1,4 +1,4 @@
-jupytext
+jupyterlab-git
 altair_saver
 altair
 vega_datasets
@@ -7,15 +7,6 @@ html5lib
 lxml
 beautifulsoup4
 pyarrow
-boto3
 psycopg2-binary
 fuzzywuzzy[speedup]
-jellyfish
-spacy
-ecrivain
-khanbox
-kharser
-khadoop
-nbdime
 requests-html
-jupyterlab-git

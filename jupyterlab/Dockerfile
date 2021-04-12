@@ -1,8 +1,8 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/pyspark-notebook:aec555e49be6
 
 USER $NB_UID
-VOLUME /opt/app/data
-WORKDIR /opt/app/data
+WORKDIR $HOME
 COPY requirements.txt .
-RUN pip install --upgrade --no-cache-dir -r requirements.txt
-RUN jupyter labextension install @jupyterlab/toc
+RUN pip install --upgrade --no-cache-dir jupyterlab-git 
+#-r requirements.txt
+RUN jupyter lab build 
