@@ -1,0 +1,8 @@
+services:
+  notebook:
+    build: .
+    image: local/jupyterlab:v1
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"

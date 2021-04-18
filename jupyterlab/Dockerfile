@@ -1,8 +1,6 @@
-FROM jupyter/pyspark-notebook:aec555e49be6
+FROM jupyter/pyspark-notebook:584f43f06586
 
 USER $NB_UID
-WORKDIR $HOME
-COPY requirements.txt .
-RUN pip install --upgrade --no-cache-dir jupyterlab-git 
-#-r requirements.txt
-RUN jupyter lab build 
+RUN pip install --upgrade --no-cache-dir \
+    "jupyterlab-git>=0.30.*" \
+    "jupyter-resource-usage==0.5.1"
