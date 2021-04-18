@@ -3,4 +3,8 @@ FROM jupyter/pyspark-notebook:584f43f06586
 USER $NB_UID
 RUN pip install --upgrade --no-cache-dir \
     "jupyterlab-git>=0.30.*" \
-    "jupyter-resource-usage==0.5.1"
+    "jupyter-resource-usage==0.5.1" \
+    "jupyterlab-code-formatter>=1.4.*" \
+    # needed by code-formatter
+    "black==20.8b1" \
+    "isort==5.8.0" 
