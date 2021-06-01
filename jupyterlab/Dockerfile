@@ -7,4 +7,7 @@ RUN pip install --upgrade --no-cache-dir \
     "jupyterlab-code-formatter>=1.4.*" \
     # needed by code-formatter
     "black==20.8b1" \
-    "isort==5.8.0" 
+    "isort==5.8.0"  \
+    #ploting
+    "plotly==5.0.0rc1" \
+    "altair>= 4.1.*" 
