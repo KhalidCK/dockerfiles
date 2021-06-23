@@ -14,5 +14,5 @@ RUN pip install --upgrade --no-cache-dir \
     "black==20.8b1" \
     "isort==5.8.0"  \
     #ploting
-    "plotly==5.0.0rc1" \
+    "plotly>=5.*" \
     "altair>= 4.1.*" 
